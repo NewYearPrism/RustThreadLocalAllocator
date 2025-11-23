@@ -5,6 +5,7 @@ use allocator_api2::alloc::AllocError;
 use allocator_api2::alloc::Allocator;
 use bumpalo::Bump;
 
+#[derive(Debug, Clone, Copy)]
 pub struct ThreadLocalBump;
 
 impl ThreadLocalBump {

@@ -18,6 +18,7 @@ mod generic {
         Allocator,
     };
 
+    #[derive(Debug, Clone, Copy)]
     pub struct ThreadLocalAllocator<A: Allocator>(PhantomData<A>);
 
     impl<A: Allocator> ThreadLocalAllocator<A> {
