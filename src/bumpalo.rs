@@ -9,7 +9,7 @@ pub struct ThreadLocalBump;
 
 impl ThreadLocalBump {
     thread_local! {
-        static BUMP: Bump = Bump::new();
+        pub static BUMP: Bump = Bump::new();
     }
 }
 
